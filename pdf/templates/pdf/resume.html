@@ -14,13 +14,17 @@
     <br/>
     <p>Summary</p>
     <p>{{ user_form.summary }}</p>
+    <hr/>
     <p>Skills</p>
     <p>{{ user_form.skills }}</p>
+    <hr/>
     <p>Education</p>
     <ul>
-        <li>{{ user_form.school }}</li>
-        <li>{{ user_form.university }}</li>
+        <li>Schooling: {{ user_form.school }}</li>
+        <li>{{ user_form.degree }} from {{ user_form.university }}</li>
     </ul>
-
+    <hr/>
+    <p>Previous Work</p>
+    <p>{{ user_form.previous_work }}</p>
 </body>
 </html>
