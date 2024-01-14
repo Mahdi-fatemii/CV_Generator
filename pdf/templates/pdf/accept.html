@@ -7,53 +7,63 @@
     <title>Document</title>
 </head>
 <body>
-<form>
+<div class="container">
+    <div class="row">
+        <div class="col-md-7">
+            <form method="POST">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="first_name">First Name</label>
+                    <input type="text" class="form-control" id="first_name" name="first_name"
+                           placeholder="Enter Your First Name">
+                </div>
+                <div class="form-group">
+                    <label for="last_name">Last Name</label>
+                    <input type="text" class="form-control" id="last_name" name="last_name"
+                           placeholder="Enter Your Last Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp"
+                           placeholder="Enter Your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="text" class="form-control" id="phone" name="phone"
+                           placeholder="Enter Your Phone Number">
+                </div>
+                <div class="form-group">
+                    <label for="summary">About You</label>
+                    <textarea class="form-control" id="summary" name="summary"
+                              placeholder="Enter Your Summary"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="degree">Degree</label>
+                    <input type="text" class="form-control" id="degree" name="degree" placeholder="Enter Your Degree">
+                </div>
+                <div class="form-group">
+                    <label for="school">School</label>
+                    <input type="text" class="form-control" id="school" name="school" placeholder="Enter Your School">
+                </div>
+                <div class="form-group">
+                    <label for="university">University</label>
+                    <input type="text" class="form-control" id="university" name="university"
+                           placeholder="Enter Your University">
+                </div>
+                <div class="form-group">
+                    <label for="previous_work">Previous Works</label>
+                    <textarea class="form-control" id="previous_work" name="previous_work"
+                              placeholder="Enter Your Previous Works or Job Experiences"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="skills">Skills</label>
+                    <textarea class="form-control" id="skills" name="skills" placeholder="Enter Your Skills"></textarea>
+                </div>
 
-    <div class="form-group">
-        <label for="first_name">First Name</label>
-        <input type="text" class="form-control" id="first_name" name="first_name" placeholder="Enter Your First Name">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
     </div>
-    <div class="form-group">
-        <label for="last_name">Last Name</label>
-        <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Enter Your Last Name">
-    </div>
-    <div class="form-group">
-        <label for="email">Email address</label>
-        <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp"
-               placeholder="Enter Your email">
-    </div>
-    <div class="form-group">
-        <label for="phone">Phone Number</label>
-        <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter Your Phone Number">
-    </div>
-    <div class="form-group">
-        <label for="summary">About You</label>
-        <textarea class="form-control" id="summary" name="summary"
-                  placeholder="Enter Your Summary"></textarea>
-    </div>
-    <div class="form-group">
-        <label for="degree">Degree</label>
-        <input type="text" class="form-control" id="degree" name="degree" placeholder="Enter Your Degree">
-    </div>
-    <div class="form-group">
-        <label for="school">School</label>
-        <input type="text" class="form-control" id="school" name="school" placeholder="Enter Your School">
-    </div>
-    <div class="form-group">
-        <label for="university">University</label>
-        <input type="text" class="form-control" id="university" name="university" placeholder="Enter Your University">
-    </div>
-    <div class="form-group">
-        <label for="previous_work">Previous Works</label>
-        <textarea class="form-control" id="previous_work" name="previous_work"
-                  placeholder="Enter Your Previous Works or Job Experiences"></textarea>
-    </div>
-    <div class="form-group">
-        <label for="skills">Skills</label>
-        <textarea class="form-control" id="skills" name="skills" placeholder="Enter Your Skills"></textarea>
-    </div>
-
-    <button type="submit" class="btn btn-primary">Submit</button>
-</form>
+</div>
 </body>
 </html>
