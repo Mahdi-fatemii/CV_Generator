@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <h2>{{ user_form.first_name }} {{ user_form.last_name }}</h2>
+    <h2>{{ user_form.email }}</h2>
+    <h2>{{ user_form.phone }}</h2>
+    <hr/>
+    <br/>
+    <p>Summary</p>
+    <p>{{ user_form.summary }}</p>
+    <p>Skills</p>
+    <p>{{ user_form.skills }}</p>
+    <p>Education</p>
+    <ul>
+        <li>{{ user_form.school }}</li>
+        <li>{{ user_form.university }}</li>
+    </ul>
+
+</body>
+</html>
